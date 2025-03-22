@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogue nos melhores servidores de Counter-Strike 1.6 com apenas um clique! Suporte para PC e celular via Xash3D New. Entre na ação agora!" />
     <title>Logikoz Network | CS 1.6</title>
     <style>
         body {
@@ -24,6 +25,11 @@
         nav .logo {
             width: 100px;
             height: 100px;
+        }
+
+        nav .highlight {
+            text-decoration: underline;
+            color: #9f0af5
         }
 
         .container {
@@ -126,10 +132,11 @@
 <body>
 
     <nav>
-        <img class="logo" src="./assets/logo.png"
-            alt="Logikoz Network Logo" />
+        <img class="logo" src="./assets/logo.png" alt="Logikoz Network Logo" />
         <h1>Logikoz Network</h1>
-        <p>Conecte-se aos melhores servidores de Counter-Strike 1.6 com um clique!</p>
+        <p>Conecte-se aos melhores servidores de Counter-Strike 1.6 com apenas um clique!</p>
+        <p>Jogue no <span class="highlight">PC</span> ou pelo <span class="highlight">Celular</span> com suporte ao Xash3D New e
+        aproveite a melhor experiência multiplayer.</p>
     </nav>
 
     <div class="container">
@@ -138,9 +145,11 @@
             <h3>Pipa Raiz</h3>
             <p>Nostalgia e simplicidade em um dos modos mais famosos de antigamente, reviva a experiência.</p>
             <p>Versão: v1.2</p>
-            <input type="text" id="ip1" class="copy-input" value="167.250.71.186:27082" onclick="copyToClipboard('ip1')" readonly>
+            <input type="text" id="ip1" class="copy-input" value="167.250.71.186:27082" onclick="copyToClipboard('ip1')"
+                readonly>
             <p>Região: Norte Brasil</p>
-            <input type="text" id="ip11" class="copy-input" value="104.234.65.41:27021" onclick="copyToClipboard('ip11')" readonly>
+            <input type="text" id="ip11" class="copy-input" value="104.234.65.41:27021"
+                onclick="copyToClipboard('ip11')" readonly>
             <p>Região: Sudeste Brasil</p>
         </div>
 
@@ -149,11 +158,15 @@
             <h3>Pipa Combate</h3>
             <p>Experimente o CS com gráficos e jogabilidade realistas. Pipa moderno para quem busca desafios reais.</p>
             <p>Versão: v4.9</p>
-            <input type="text" id="ip6" class="copy-input" value="167.250.71.186:27086" onclick="copyToClipboard('ip6')" readonly>
+            <input type="text" id="ip6" class="copy-input" value="167.250.71.186:27086" onclick="copyToClipboard('ip6')"
+                readonly>
             <p>Região: Norte Brasil</p>
-            <input type="text" id="ip61" class="copy-input" value="104.234.65.41:27018" onclick="copyToClipboard('ip61')" readonly>
-            <input type="text" id="ip62" class="copy-input" value="104.234.65.41:27019" onclick="copyToClipboard('ip62')" readonly>
-            <input type="text" id="ip63" class="copy-input" value="104.234.65.41:27020" onclick="copyToClipboard('ip63')" readonly>
+            <input type="text" id="ip61" class="copy-input" value="104.234.65.41:27018"
+                onclick="copyToClipboard('ip61')" readonly>
+            <input type="text" id="ip62" class="copy-input" value="104.234.65.41:27019"
+                onclick="copyToClipboard('ip62')" readonly>
+            <input type="text" id="ip63" class="copy-input" value="104.234.65.41:27020"
+                onclick="copyToClipboard('ip63')" readonly>
             <p>Região: Sudeste Brasil</p>
         </div>
 
@@ -162,7 +175,8 @@
             <h3>Zombie Plague</h3>
             <p>Lute contra hordas de zumbis! Sobreviva ou se torne um deles em uma batalha constante!</p>
             <p>Versão: v4.3</p>
-            <input type="text" id="ip2" class="copy-input" value="167.250.71.186:27083" onclick="copyToClipboard('ip2')" readonly>
+            <input type="text" id="ip2" class="copy-input" value="167.250.71.186:27083" onclick="copyToClipboard('ip2')"
+                readonly>
             <p>Região: Norte Brasil</p>
             <input type="text" id="ip21" class="copy-input" value="Em breve" readonly>
             <p>Região: Sudeste Brasil</p>
@@ -175,7 +189,8 @@
             <p>Versão: v2.6</p>
             <input type="text" id="ip3" class="copy-input" value="Indisponível" readonly>
             <p>Região: Norte Brasil</p>
-            <input type="text" id="ip31" class="copy-input" value="104.234.65.41:27022" onclick="copyToClipboard('ip31')" readonly>
+            <input type="text" id="ip31" class="copy-input" value="104.234.65.41:27022"
+                onclick="copyToClipboard('ip31')" readonly>
             <p>Região: Sudeste Brasil</p>
         </div>
 
@@ -184,7 +199,8 @@
             <h3>Zombie Escape</h3>
             <p>Fuja das legiões de zumbis! Corra, se esconda e escape antes que seja tarde demais!</p>
             <p>Versão: v1.1</p>
-            <input type="text" id="ip4" class="copy-input" value="167.250.71.186:27084" onclick="copyToClipboard('ip4')" readonly>
+            <input type="text" id="ip4" class="copy-input" value="167.250.71.186:27084" onclick="copyToClipboard('ip4')"
+                readonly>
             <p>Região: Norte Brasil</p>
             <input type="text" id="ip41" class="copy-input" value="Em breve" readonly>
             <p>Região: Sudeste Brasil</p>
@@ -195,31 +211,37 @@
             <h3>PaintBall</h3>
             <p>Mergulhe na diversão do paintball! Jogue com estratégias e reflexos rápidos em batalhas coloridas!</p>
             <p>Versão: v6.0</p>
-            <input type="text" id="ip5" class="copy-input" value="167.250.71.186:27085" onclick="copyToClipboard('ip5')" readonly>
+            <input type="text" id="ip5" class="copy-input" value="167.250.71.186:27085" onclick="copyToClipboard('ip5')"
+                readonly>
             <p>Região: Norte Brasil</p>
-            <input type="text" id="ip51" class="copy-input" value="104.234.65.41:27016" onclick="copyToClipboard('ip51')" readonly>
+            <input type="text" id="ip51" class="copy-input" value="104.234.65.41:27016"
+                onclick="copyToClipboard('ip51')" readonly>
             <p>Região: Sudeste Brasil</p>
         </div>
 
         <div class="server-card">
             <img src="./assets/4fun.png" alt="Logo do servidor 1">
             <h3>4Fun</h3>
-            <p>Entre em partidas cheias de ação e diversão, onde estratégias e reflexos rápidos fazem toda a diferença!</p>
+            <p>Entre em partidas cheias de ação e diversão, onde estratégias e reflexos rápidos fazem toda a diferença!
+            </p>
             <p>Versão: v1.0</p>
             <input type="text" id="ip7" class="copy-input" value="Em breve" readonly>
             <p>Região: Norte Brasil</p>
-            <input type="text" id="ip71" class="copy-input" value="104.234.65.41:27015" onclick="copyToClipboard('ip71')" readonly>
+            <input type="text" id="ip71" class="copy-input" value="104.234.65.41:27015"
+                onclick="copyToClipboard('ip71')" readonly>
             <p>Região: Sudeste Brasil</p>
         </div>
 
         <div class="server-card">
             <img src="./assets/dm.png" alt="Logo do servidor 1">
             <h3>Mata-Mata</h3>
-            <p>Ação intensa sem pausas! Entre no combate, teste sua mira e volte à batalha instantaneamente após cada eliminação!</p>
+            <p>Ação intensa sem pausas! Entre no combate, teste sua mira e volte à batalha instantaneamente após cada
+                eliminação!</p>
             <p>Versão: v1.0</p>
             <input type="text" id="ip8" class="copy-input" value="Em breve" readonly>
             <p>Região: Norte Brasil</p>
-            <input type="text" id="ip81" class="copy-input" value="104.234.65.41:27017" onclick="copyToClipboard('ip71')" readonly>
+            <input type="text" id="ip81" class="copy-input" value="104.234.65.41:27017"
+                onclick="copyToClipboard('ip71')" readonly>
             <p>Região: Sudeste Brasil</p>
         </div>
     </div>
