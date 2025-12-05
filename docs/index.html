@@ -159,6 +159,32 @@
             background-color: #ff4444;
         }
     </style>
+
+    <!-- TOAST -->
+    <style>
+        #toast {
+            visibility: hidden;
+            min-width: 200px;
+            background: rgba(3, 192, 28, 0.8);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px 16px;
+            position: fixed;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            z-index: 9999;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+        }
+
+        #toast.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
@@ -365,7 +391,19 @@
 
             document.execCommand("copy");
 
-            alert("IP/Porta copiado: " + copyText.value);
+            showToast("IP/Porta copiado: " + copyText.value);
+        }
+    </script>
+
+    <script>
+        function showToast(message) {
+            const toast = document.getElementById("toast");
+            toast.innerText = message;
+            toast.classList.add("show");
+
+            setTimeout(() => {
+                toast.classList.remove("show");
+            }, 5000); // 5 segundos
         }
     </script>
 
@@ -415,7 +453,7 @@
 
     </script>
 
-
+    <div id="toast"></div>
 </body>
 
 </html>
